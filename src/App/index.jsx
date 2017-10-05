@@ -2,22 +2,13 @@
 import React, { Component } from 'react';
 import './style.css';
 import Header from './Header'
+import Birds from './Birds'
 
 // Class Component
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      birds: [
-          {
-            name: 'Blue Jay',
-            color: 'blue',
-          },
-          {
-            name: 'Red Robbin',
-            color: 'red',
-          }
-        ],
       city: '',
     }
   }
@@ -36,6 +27,7 @@ class App extends Component {
         <h1>My React App</h1>
         <h2>I'm currently in {this.state.city}</h2>
         <Header />
+        <Birds />
       </div>
     );
   }
